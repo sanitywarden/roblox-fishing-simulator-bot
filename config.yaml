@@ -1,0 +1,122 @@
+# +================================================================================
+# | Roblox Fishing Simulator by Vivit configuration file
+# |
+# | The Roblox bot reads some of it's settings from this file
+# | You can change safely edit the properties in this file
+# |
+# | Lines starting with '#' are comments and you can 
+# | safely add/remove them if you wish so
+# | DON'T remove lines that are not comments
+# |
+# | If you encounter any problems with the bot after changing this file
+# | exit the script and restore defaults in this file
+# | Default values are marked as 'DEFAULT x' where x is the default value
+# |
+# | In case you have any other problems with the bot - contact it's developer
+# |
+# | Happy fishing!
+# +================================================================================
+
+# Debug mode for the developer
+# This should be turned off most of the time
+# DEFAULT 0
+debug_mode: 0
+
+# Press and hold this key to quit the script
+# Examples of other possible hotkeys:
+# - Letters: 'a' 'q' 'x'
+# - Numbers: '1' '9' '0'
+# - Special: 'space' 'enter' 'esc' 'backspace' 'tab'
+# - Other: ',' '.' '/' ']' '='
+# DEFAULT 'q'
+quit_script_hotkey: 'q'
+
+# NOTE: Script can only be paused/unpaused when not actively fishing
+# Press and hold this key to pause the script
+# Examples of other possible hotkeys:
+# - Letters: 'a' 'q' 'x'
+# - Numbers: '1' '9' '0'
+# - Special: 'space' 'enter' 'esc' 'backspace' 'tab'
+# - Other: ',' '.' '/' ']' '='
+# DEFAULT 'p'
+pause_script_hotkey: 'p'
+
+# Press and hold this key to reset state
+# Examples of other possible hotkeys:
+# - Letters: 'a' 'q' 'x'
+# - Numbers: '1' '9' '0'
+# - Special: 'space' 'enter' 'esc' 'backspace' 'tab'
+# - Other: ',' '.' '/' ']' '='
+# DEFAULT 'r'
+reset_script_hotkey: 'r'
+
+# Press and hold this key to show fishing info
+# Examples of other possible hotkeys:
+# - Letters: 'a' 'q' 'x'
+# - Numbers: '1' '9' '0'
+# - Special: 'space' 'enter' 'esc' 'backspace' 'tab'
+# - Other: ',' '.' '/' ']' '='
+# DEFAULT 'i'
+show_info_hotkey: 'i'
+
+# NOTE: This setting has a big performance impact. 
+# Rectangle width for bubble detector
+# The bigger the rectangle the more reliable the bot, but at the cost of performance
+# DEFAULT 312
+detect_range_bubble_x: 312
+
+# NOTE: This setting has a big performance impact. 
+# Rectangle height for bubble detector
+# The bigger the rectangle the more reliable the bot, but at the cost of performance
+# DEFAULT 312
+detect_range_bubble_y: 312
+
+# NOTE: This setting has a big performance impact. 
+# Rectangle width for fishing minigame arc detector
+# The bigger the rectangle the more reliable the bot, but at the cost of performance
+# DEFAULT 128
+detect_range_arc_x: 128
+
+# NOTE: This setting has a big performance impact. 
+# Rectangle height for fishing minigame arc detector
+# The bigger the rectangle the more reliable the bot, but at the cost of performance
+# DEFAULT 128
+detect_range_arc_y: 128
+
+# NOTE: This setting has a big performance impact. 
+# Rectangle width for backpack capacity detector
+# The bigger the rectangle the more reliable the bot, but at the cost of performance
+# DEFAULT 256
+detect_range_backpack_full_x: 256
+
+# NOTE: This setting has a big performance impact. 
+# Rectangle height for backpack capacity detector
+# The bigger the rectangle the more reliable the bot, but at the cost of performance
+# DEFAULT 312
+detect_range_backpack_full_y: 312
+
+# In fishing minigame the click time is random to obfuscate the player being a bot
+# Click time in the minigame is between in range [fishing_minigame_click_min_s, fishing_minigame_click_max_s]
+# This field sets the minimum of the click time range in seconds
+# DEFAUT 0.225
+fishing_minigame_click_min_s: 0.235
+
+# In fishing minigame the click time is random to obfuscate the player being a bot
+# Click time in the minigame is between in range [fishing_minigame_click_min_s, fishing_minigame_click_max_s]
+# This field sets the maximum of the click time range in seconds
+# DEFAULT 0.25
+fishing_minigame_click_max_s: 0.25
+
+# How much time is the user given to prepare
+# after starting the Roblox fishing script 
+# This field sets the preparation time in seconds
+# DEFAULT 5
+start_script_countdown_s: 5
+
+# When player is idle (not actively fishing) 
+# the script attempts to reset state in case 
+# it broke
+# This field sets the reset state time in seconds
+# DEFAULT 10
+reset_state_cooldown_s: 10
+
