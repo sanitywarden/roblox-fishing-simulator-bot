@@ -1,0 +1,6 @@
+1.0.0
+Made a working automated bot/script for fishing in the Fishing Simulator Roblox game.
+Added support for Windows (windows.py)
+
+1.0.1
+Added support for MacOS (macos.py)

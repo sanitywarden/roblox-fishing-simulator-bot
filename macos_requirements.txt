@@ -1,0 +1,6 @@
+mss
+numpy
+pynput
+pyobjc-framework-Quartz
+pyyaml
+pyautogui
