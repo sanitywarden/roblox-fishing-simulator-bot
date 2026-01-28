@@ -1,5 +1,5 @@
 #### README in other languages
-[Polski](https://github.com/sanitywarden/roblox-fishing-simulator-bot/pl_README.md)
+[Polski](https://github.com/sanitywarden/roblox-fishing-simulator-bot/blob/main/pl_README.md)
 
 # roblox-fishing-simulator-bot
 This is the repository for a simple Windows/MacOS Python bot/script which automates the fishing process in a Roblox game called Fishing Simulator.

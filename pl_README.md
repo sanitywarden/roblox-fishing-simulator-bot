@@ -1,5 +1,5 @@
 #### README w innych językach
-[English](https://github.com/sanitywarden/roblox-fishing-simulator-bot/README.md)
+[English](https://github.com/sanitywarden/roblox-fishing-simulator-bot#readme)
 
 # roblox-fishing-simulator-bot
 To repozytorium zawiera prostego bota/skrypt w języku Python na systemy Windows oraz macOS, który automatyzuje proces łowienia ryb w grze Roblox o nazwie Fishing Simulator.
