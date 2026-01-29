@@ -24,7 +24,7 @@ I measured that the bot averages at about a fish per 10 to 12 seconds. That make
 
 ## Prerequisites
 - Roblox
-- Python
+- Python (tested on 3.12)
 
 ## How to install it
 ### Using `git`

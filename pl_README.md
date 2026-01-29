@@ -23,7 +23,7 @@ Z moich pomiarów wynika, że bot wyciąga średnio jedną rybę co 10–12 seku
 
 ## Wymagania 
 - Roblox
-- Python
+- Python (przetestowane na 3.12)
 
 ## Jak zainstalować
 ### Używając `git`
