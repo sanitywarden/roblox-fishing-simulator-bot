@@ -59,6 +59,11 @@ def click_timed(x, y, min_time, max_time):
 def click(x, y):
     click_timed(x, y, 0.1, 0.25)
 
+def click_random(min_time, max_time):
+    x = int(middle_screen_x + random.uniform(-16, 16))
+    y = int(middle_screen_y + random.uniform(-16, 16))
+    click_timed(x, y, min_time, max_time)
+
 # In Fishing Simulator, the indicator of the hook being in the water is a blue bubble column
 def check_bubbles_on_screen():
     screenshot = pyautogui.screenshot()
@@ -287,7 +292,7 @@ while not keyboard.is_pressed(quit_script_hotkey):
 
     # Visible bubbles and not in minigame means that we haven't yet started a minigame
     if check_bubbles_on_screen() and not is_in_fishing_minigame:
-        click(middle_screen_x, middle_screen_y)
+        click_random(0.1, 0.2)
         
         if check_fishing_minigame_arc_is_on_screen():
             print_with_time_debug("Start fishing minigame")
@@ -295,7 +300,7 @@ while not keyboard.is_pressed(quit_script_hotkey):
 
     # If there is no bubbles on the screen then throw the fishing rod's hook
     if not check_bubbles_on_screen() and not is_in_fishing_minigame and not thrown_hook:
-        click(middle_screen_x, middle_screen_y)
+        click_random(0.1, 0.2)
 
         if check_backpack_is_full():
             print_with_time("Pausing the script - backpack is full")
@@ -323,7 +328,7 @@ while not keyboard.is_pressed(quit_script_hotkey):
     # =============================================
 
     while is_in_fishing_minigame and thrown_hook and check_fishing_minigame_arc_is_on_screen():
-        click_timed(middle_screen_x, middle_screen_y, fishing_minigame_click_min_s, fishing_minigame_click_max_s)
+        click_random(fishing_minigame_click_min_s, fishing_minigame_click_max_s)
 
     if is_in_fishing_minigame and thrown_hook and not check_fishing_minigame_arc_is_on_screen():
         print_with_time_debug("End fishing minigame")
