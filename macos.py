@@ -131,7 +131,7 @@ def check_backpack_is_full():
     screenshot = get_screenshot()
     y_pos = int(0.6 * logic_height)
     return check_area(screenshot, middle_screen_x, y_pos, detect_range_backpack_full_x, detect_range_backpack_full_y,
-                      (245, 255), (0, 10), (95, 105))
+                      (230, 245), (40, 55), (95, 105))
 
 def print_with_time(message):
     print(f"[{time.strftime('%H:%M:%S')}] {message}")
