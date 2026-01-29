@@ -99,13 +99,15 @@ detect_range_backpack_full_y: 312
 # Click time in the minigame is between in range [fishing_minigame_click_min_s, fishing_minigame_click_max_s]
 # This field sets the minimum of the click time range in seconds
 # DEFAUT 0.225
-fishing_minigame_click_min_s: 0.235
+# RECOMMENDED 0.185-0.225
+fishing_minigame_click_min_s: 0.185
 
 # In fishing minigame the click time is random to obfuscate the player being a bot
 # Click time in the minigame is between in range [fishing_minigame_click_min_s, fishing_minigame_click_max_s]
 # This field sets the maximum of the click time range in seconds
 # DEFAULT 0.25
-fishing_minigame_click_max_s: 0.25
+# RECOMMENDED 0.2-0.25
+fishing_minigame_click_max_s: 0.20
 
 # How much time is the user given to prepare
 # after starting the Roblox fishing script 
