@@ -4,3 +4,6 @@ Added support for Windows (windows.py)
 
 1.0.1
 Added support for MacOS (macos.py)
+
+1.0.2
+(MacOS) Made the bot sell fish if near a stall (on demand, or upon full backpack)

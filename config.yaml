@@ -22,6 +22,15 @@
 # DEFAULT 0
 debug_mode: 0
 
+# Press and hold this key to forcefully sell the fish
+# Examples of other possible hotkeys:
+# - Letters: 'a' 'q' 'x'
+# - Numbers: '1' '9' '0'
+# - Special: 'space' 'enter' 'esc' 'backspace' 'tab'
+# - Other: ',' '.' '/' ']' '='
+# DEFAULT 'u'
+sell_fish_hotkey: 'u'
+
 # Press and hold this key to quit the script
 # Examples of other possible hotkeys:
 # - Letters: 'a' 'q' 'x'
@@ -69,7 +78,7 @@ detect_range_bubble_x: 312
 # Rectangle height for bubble detector
 # The bigger the rectangle the more reliable the bot, but at the cost of performance
 # DEFAULT 312
-detect_range_bubble_y: 312
+detect_range_bubble_y: 256
 
 # NOTE: This setting has a big performance impact. 
 # Rectangle width for fishing minigame arc detector
@@ -119,6 +128,5 @@ start_script_countdown_s: 5
 # the script attempts to reset state in case 
 # it broke
 # This field sets the reset state time in seconds
-# DEFAULT 10
-reset_state_cooldown_s: 10
-
+# DEFAULT 5
+reset_state_cooldown_s: 5
