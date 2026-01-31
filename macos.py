@@ -194,7 +194,7 @@ def find_sell_button_coords():
     r_range = (80, 120)
     g_range = (140, 200)
     b_range = (200, 255)
-    return find_color_in_roi(r_range, g_range, b_range, 0.735, 0.43, box_ratio=0.1)
+    return find_color_in_roi(r_range, g_range, b_range, 0.735, 0.44, box_ratio=0.1)
 
 def find_sell_everything_button_coords():
     r_range = (110, 140)
@@ -230,8 +230,8 @@ print_with_time(f"Depending on your fishing rod upgrades, this script averages a
 print_with_time(f"Press and hold '{quit_script_hotkey}' to stop the script")
 print_with_time(f"Press and hold '{pause_script_hotkey}' to pause the script")
 print_with_time(f"Press and hold '{reset_script_hotkey}' to reset the script")
-print_with_time(f"Press and hold '{show_info_hotkey}' to show fishing info\n")
-print_with_time(f"Press and hold '{sell_fish_hotkey}' to force sell fish\n")
+print_with_time(f"Press and hold '{show_info_hotkey}' to show fishing info")
+print_with_time(f"Press and hold '{force_sell_fish_hotkey}' to force sell fish\n")
 print_with_time(f"You have {start_script_countdown_s} seconds to prepare the Roblox Fishing Simulator game\n")
 time.sleep(3)
 
