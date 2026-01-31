@@ -231,6 +231,7 @@ print_with_time(f"Press and hold '{quit_script_hotkey}' to stop the script")
 print_with_time(f"Press and hold '{pause_script_hotkey}' to pause the script")
 print_with_time(f"Press and hold '{reset_script_hotkey}' to reset the script")
 print_with_time(f"Press and hold '{show_info_hotkey}' to show fishing info\n")
+print_with_time(f"Press and hold '{sell_fish_hotkey}' to force sell fish\n")
 print_with_time(f"You have {start_script_countdown_s} seconds to prepare the Roblox Fishing Simulator game\n")
 time.sleep(3)
 
@@ -325,7 +326,6 @@ while not tracker.is_pressed(quit_script_hotkey):
 
         backpack_full = check_backpack_is_full()
         if force_sell_fish or check_backpack_is_full():
-
             # Try opening the shop a few times to see if it's nearby
             mac_keypress(MAC_keyboard_E, 0.1)
 
@@ -370,6 +370,9 @@ while not tracker.is_pressed(quit_script_hotkey):
 
                 in_shop = False
                 force_sell_fish = False
+
+            else:
+                paused_script = True
 
         else:
             print_with_time_debug("Throw hook")
